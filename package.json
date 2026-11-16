@@ -1,0 +1,25 @@
+{
+  "name": "finu-tokens",
+  "version": "0.1.0",
+  "private": true,
+  "description": "finu.muse test tokens \u2014 STEST ERC-20 + STEST pools + the 0xmuse logo NFT. Testnet only, dry-run by default.",
+  "type": "commonjs",
+  "scripts": {
+    "compile": "node scripts/compile.js",
+    "compile-nft": "node scripts/compile-nft.js",
+    "deploy": "node scripts/deploy.js",
+    "create-pool": "node scripts/create-pool.js",
+    "verify": "node scripts/verify.js",
+    "prepare-metadata": "node scripts/prepare-metadata.js",
+    "mint": "node scripts/mint.js"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0",
+    "@uniswap/v2-core": "^1.0.1",
+    "@uniswap/v2-periphery": "^1.1.0-beta.0",
+    "ethers": "^6.13.0",
+    "solc": "^0.8.30",
+    "ipfs-only-hash": "^4.0.0"
+  },
+  "license": "MIT"
+}

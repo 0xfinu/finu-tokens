@@ -1,0 +1,61 @@
+{
+  "arc": {
+    "factory": "0xB56B00C38EF85633A789644415A16b4C8ea12EF8",
+    "pair": "0x78dba0e6bf972f9d68732bbf20bd5e0d9888612b",
+    "router": "0x54599C3e0bcb99ca37b286242b5eC5D331AB9D18",
+    "token": "0x2B1FB6394461bb9578cDd40fda5C07E774FB4804",
+    "tokenDeployedAt": "2026-11-15T02:13:36.382Z",
+    "tokenTxHash": "0x8e8058de0c113c9682a45c4190952713bac9f82d7fd150616341da69aa885e98",
+    "pairTxHash": "0x2dcf84ac80356f245903f74ddc05390f6c66017306172740e3f5294576c41b42",
+    "poolNote": "STEST/USDC 10,000 + 10, pool live 2026-11-15, reserves verified onchain, LP in burner",
+    "testRemove10pct": {
+      "method": "direct pair burn (transfer LP -> pair + burn), router removeLiquidity REVERTS on the third-party Arc router",
+      "transferTx": "0xfe4df5cefe3864577c40f75b090bdcf08e6de9f38c467b9ebd0469591ebd84bf",
+      "transferBlock": 72574494,
+      "burnTx": "0x2bf006e6e651e3c06359fd476b6e80cdfd865d3326e352bc73b60c5364717c53",
+      "burnBlock": 72574502,
+      "lpRemoved": "31522776601583",
+      "stestBack": "996.837722336647197732",
+      "usdcBack": "0.992682",
+      "result": "PASS",
+      "burnerLpRemaining": "283704989414253",
+      "at": "2026-11-16T16:13:00Z"
+    },
+    "routerRemoveLiquidityBroken": "Third-party router 0x54599C3e0bcb99ca37b286242b5eC5D331AB9D18 removeLiquidity reverts with no reason even with allowance set and mins 0; use scripts/remove-liquidity-direct.js for Arc removals (final --all too)."
+  },
+  "robinhood": {
+    "factory": "0x4D92b6F9F5C853f40e9bceded343533e74C118F1",
+    "note": "No pre-deployed V2 on this testnet \u2014 factory + router are deployed by scripts/create-pool.js --dex own-v2. Fill in after that step.",
+    "pair": "0x0fF18427301c124115476975fF00a6C6B175Cd09",
+    "router": "0xDb25B1559DDac052888fE5218FD2819F52A63Cb6",
+    "token": "0x2B1FB6394461bb9578cDd40fda5C07E774FB4804",
+    "tokenDeployedAt": "2026-11-15T02:14:05.480Z",
+    "tokenTxHash": "0x99f949ca61475fde663f1fc967d7ba2cfe8a81ba180da79dff5800d13504b0b0",
+    "routerPatched": true,
+    "routerOldBroken": "0xa9467E7eA8EcEA7448d5a0beacc9f4144b84379D",
+    "pairTxHash": "0x328a0625586f4bc1c7ed6b05387e3897f821dff0cb30d0be6aace9bf5835741b",
+    "routerTxHash": "0x49292ceee006a4ee4841315ccb89128f9c02bc7b8e7332d88b3b4758a91d0d1b",
+    "poolCreatedAt": "2026-11-15T02:20:15.524Z",
+    "testRemove10pct": {
+      "method": "router removeLiquidityETH via patched router 0xDb25B1559DDac052888fE5218FD2819F52A63Cb6",
+      "approveTx": "0xc7a956b8f47e2d4551b3b29913e6902c30ce5df2542967ffd15ffe8fa7146cf8",
+      "approveBlock": 154138200,
+      "removeTx": "0xe5869bcc1cc87bd840506f3d916ac110b5346625070e208979656b5c5faea8bd",
+      "removeBlock": 154138208,
+      "lpRemoved": "316227766016837833",
+      "stestBack": "999.999999999999683456",
+      "result": "PASS",
+      "burnerLpRemaining": "2846049896150040498",
+      "at": "2026-11-16T16:11:00Z"
+    }
+  },
+  "sepolia": {
+    "factory": "0xF62c03E08ada871A0bEb309762E260a7a6a880E6",
+    "note": "Fallback only; Sepolia V2 factory/router verified live 2026-11-15 (code present).",
+    "pair": null,
+    "router": "0xeE567Fe1712Faf6149d80dA1E6934E354124CfE3",
+    "token": null,
+    "tokenDeployedAt": null,
+    "tokenTxHash": null
+  }
+}

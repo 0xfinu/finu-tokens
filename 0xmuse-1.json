@@ -1,0 +1,32 @@
+{
+  "name": "0xmuse #1",
+  "description": "0xmuse #1 — a testnet NFT from the 0xmuse sniper toolkit. Artwork is the approved 0xmuse logo (3D fluffy purple creature). Testnet only; no value.",
+  "image": "ipfs://bafkreib6nv7dbwcz25g5xysz2kzguyshulgpmkdrdco4xlp4ye5b2gdbe4",
+  "attributes": [
+    {
+      "trait_type": "Collection",
+      "value": "0xmuse"
+    },
+    {
+      "trait_type": "Token",
+      "value": "1"
+    },
+    {
+      "trait_type": "Network",
+      "value": "Arc Testnet"
+    },
+    {
+      "trait_type": "Artwork",
+      "value": "0xmuse logo"
+    },
+    {
+      "trait_type": "Image SHA-256",
+      "value": "3e6d7e30d859d74ddbe259d2b26a6247a2ccf62871189dcbadfcc13a1d186127"
+    }
+  ],
+  "properties": {
+    "image_sha256": "3e6d7e30d859d74ddbe259d2b26a6247a2ccf62871189dcbadfcc13a1d186127",
+    "image_cid": "bafkreib6nv7dbwcz25g5xysz2kzguyshulgpmkdrdco4xlp4ye5b2gdbe4",
+    "image_cid_source": "kubo-pinned (ipfs-cids.json)"
+  }
+}

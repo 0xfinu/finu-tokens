@@ -1,0 +1,28 @@
+{
+  "image": {
+    "file": "0xmuse-logo-160x160.jpg",
+    "sha256": "3e6d7e30d859d74ddbe259d2b26a6247a2ccf62871189dcbadfcc13a1d186127",
+    "cidv1": "bafkreib6nv7dbwcz25g5xysz2kzguyshulgpmkdrdco4xlp4ye5b2gdbe4",
+    "cidv0": "QmQiamUHh5QPTcGyxgkVZyq23c2kaVM5eBQfC4EWx6n7GA",
+    "pinned": true,
+    "method": "kubo v0.35.0 local `ipfs add --cid-version=1`"
+  },
+  "metadata": {
+    "file": "0xmuse-1.json",
+    "cidv1": "bafkreiawd3ceegu6rjsbke6henvd4lb5z3veetirwf37peabc73zniohpa",
+    "cidv1_offline_dagpb": "bafybeihgovffyxfwlkpsh4q76lwh3fmdft7kyxzjlnmrsys745jydsrt7y",
+    "pinned": true,
+    "method": "kubo v0.35.0 local ipfs add --cid-version=1"
+  },
+  "tokenURI": "ipfs://bafkreiawd3ceegu6rjsbke6henvd4lb5z3veetirwf37peabc73zniohpa",
+  "peerId": "12D3KooWLb9pDqCs15jb1GEkCAPDeRTVSz9DK8hzRiUxqeRXVQSx",
+  "metadataDir": {
+    "dir": "metadata-dir",
+    "file": "1",
+    "cidv1": "bafybeidg2vxo2ekme2waott6yv6eu4rxbjwxyrkkb2znmy6xlv6wsndjyu",
+    "baseURI": "ipfs://bafybeidg2vxo2ekme2waott6yv6eu4rxbjwxyrkkb2znmy6xlv6wsndjyu/",
+    "tokenURI_token1": "ipfs://bafybeidg2vxo2ekme2waott6yv6eu4rxbjwxyrkkb2znmy6xlv6wsndjyu/1",
+    "pinned": true
+  },
+  "baseURI": "ipfs://bafybeidg2vxo2ekme2waott6yv6eu4rxbjwxyrkkb2znmy6xlv6wsndjyu/"
+}

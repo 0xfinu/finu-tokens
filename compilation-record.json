@@ -1,0 +1,33 @@
+{
+  "evmVersionToken": "paris",
+  "optimizer": {
+    "enabled": true,
+    "runs": 200
+  },
+  "contracts": {
+    "SniperTestToken": {
+      "bytecodeSha256": "e35d1715895fc134464b9967a1b8e727f7e45069182a8a7a8f69b7f9619b6874",
+      "bytecodeBytes": 3351
+    },
+    "UniswapV2Factory": {
+      "bytecodeSha256": "9f171528556581a4418210ac4d566f062ea2d05fe68acb1d0cee2d70b389917f",
+      "bytecodeBytes": 10921
+    },
+    "UniswapV2Pair": {
+      "bytecodeSha256": "39b1ae004847c911b03a664c4132b1667f03df6bf050e7741a0a6f0bbedf8534",
+      "bytecodeBytes": 9176
+    },
+    "UniswapV2Router02": {
+      "bytecodeSha256": "ef3d56e6dc1e0c62725f75cabbb5e6aa1189a4a3e283a6bd66f8499523a1ca4e",
+      "bytecodeBytes": 18280,
+      "patched": true,
+      "patchedInitCodeHash": "0x8b438ce1178c6a062bf694855f2a859473ff45ae8c4f1217b8e6bcc52eef1819"
+    }
+  },
+  "compilerToken": "solc 0.8.38+commit.1835d247.Emscripten.clang",
+  "routerPatch": {
+    "date": "2026-11-15T02:19:36.509Z",
+    "reason": "Deployed RH factory pair hash is 0x8b438ce1..., not canonical 0x96e8ac42...; stock router computed a no-code pair address and addLiquidityETH reverted. Patched UniswapV2Library.pairFor in contracts/vendor/v2-periphery to our hash; original node_modules source untouched.",
+    "vendorSource": "contracts/vendor/v2-periphery (copy of @uniswap/v2-periphery, hash patched)"
+  }
+}
